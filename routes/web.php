@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TrainController;
+use App\Http\Controllers\TrainDetail;
 
 
 /*
@@ -16,3 +17,5 @@ use App\Http\Controllers\TrainController;
 */
 
 Route::get('/', TrainController::class)->name('trains');
+
+Route::get('/trains/{id}', TrainDetail::class)->name('trains.show');

@@ -12,4 +12,7 @@ class TrainController extends Controller
         $trains = Train::all();
         return view('trains', ['trains' => $trains]);
     }
+
+
+
 }

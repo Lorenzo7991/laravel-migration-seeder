@@ -22,6 +22,7 @@
                             <p class="card-text"><strong>In Time:</strong> {{ $train->in_time ? 'Yes' : 'No' }}</p>
                             <p class="card-text"><strong>Deleted:</strong> {{ $train->deleted ? 'Yes' : 'No' }}</p>
                         </div>
+                        <a href="{{ route('trains.show', ['id' => $train->id]) }}" class="btn btn-primary">Vedi dettagli</a>
                     </div>
                 </div>
             @endforeach
